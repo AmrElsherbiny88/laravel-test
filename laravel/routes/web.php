@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PostsControllers;
 use App\Http\Controllers\UsersControllers;
 use Illuminate\Http\Client\Request;
 use Illuminate\Http\Request as HttpRequest;
@@ -24,3 +25,8 @@ Route::controller(UsersControllers::class)->group(function(){
     Route::get( "/users/create" , "createUserss" );
 
 });
+
+ 
+// resources controller 
+
+Route::resource("posts" , PostsControllers::class);
