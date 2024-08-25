@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UsersControllers;
 use Illuminate\Http\Client\Request;
 use Illuminate\Http\Request as HttpRequest;
 use Illuminate\Support\Facades\Route;
@@ -9,6 +10,13 @@ Route::get('/', function () {
 });
 
 
-Route::get('/users/{name}', function ($name) {
-    return $name;
+
+
+
+
+
+Route::controller(UsersControllers::class)->group(function(){
+   
+    Route::get( "/users" , "createUser" );
+
 });
