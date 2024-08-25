@@ -9,4 +9,8 @@ class UsersControllers extends Controller
    public function createUser(){
      return "user";
    }
+
+   public function createUserss(){
+    return "user222";
+  }
 }

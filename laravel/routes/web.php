@@ -10,13 +10,17 @@ Route::get('/', function () {
 });
 
 
+// routing with para.
+// Route::get('/users/{name}', function ($name) {
+//     return $name;
+// });
 
 
-
-
-
+// controller import
 Route::controller(UsersControllers::class)->group(function(){
    
     Route::get( "/users" , "createUser" );
+
+    Route::get( "/users/create" , "createUserss" );
 
 });
