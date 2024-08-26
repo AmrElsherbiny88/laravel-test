@@ -29,4 +29,4 @@ Route::controller(UsersControllers::class)->group(function(){
  
 // resources controller 
 
-Route::resource("posts" , PostsControllers::class)->middleware("auth");
+Route::resource("posts" , PostsControllers::class)->middleware("auth"); //=>middleware auth
