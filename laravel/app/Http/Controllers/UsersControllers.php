@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 class UsersControllers extends Controller
 {
+ 
+
    public function createUser(){
      return "user";
    }

@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 class PostsControllers extends Controller
 {
+
+ 
     /**
      * Display a listing of the resource.
      */
