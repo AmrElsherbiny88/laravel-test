@@ -11,6 +11,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/display', function () {
+    return view('display');
+});
 
 // routing with para.
 // Route::get('/users/{name}', function ($name) {

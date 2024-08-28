@@ -19,13 +19,13 @@ class addController extends Controller
 
     $post->save();
 
-    return "succes";
+    return view("success");
  }
 
 
  public function delete( $id){
     Post::where('id' , $id)->delete();
-    return view("Posts");
+    return view("success");
 }
 
 
